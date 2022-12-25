@@ -1,5 +1,6 @@
 #include <pch.hpp>
 #include <DiagramField.hpp>
+#include <DiagramClassItem.hpp>
 
 class MyApp: public wxApp {
     bool OnInit() {
@@ -8,6 +9,7 @@ class MyApp: public wxApp {
 
         drawPane = new DiagramField( (wxFrame*) frame );
         sizer->Add(drawPane, 1, wxEXPAND);
+
 
         frame->SetSizer(sizer);
         frame->SetAutoLayout(true);
